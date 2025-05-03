@@ -1,0 +1,13 @@
+services:
+  grug:
+    container_name: grug
+    environment:
+      PORT: 4567
+    ports:
+      - "4567:4567"
+    working_dir: /app
+    volumes:
+      - ./assets:/app/assets
+    build:
+      dockerfile: Dockerfile
+    command: node ./server.js

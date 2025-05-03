@@ -1,0 +1,18 @@
+pnpm workspaces
+  frontend
+  server
+  assets
+  build
+Dockerfile
+docker-compose.yml
+
+
+1. Try to run docker-compose up. Doesn't work due to basic syntax error in docker-compose.yml.
+1. Syntax error in Dockerfile
+1. Port mis-mapped in docker-compose
+1. nginx inside docker container is misconfigured, 404. Needs to edit nginx.conf and point to correct directory
+1. Web page loads but image broken, needs to fix assets mount.
+1. Image works, but clicking button gives CORS error.
+Use htmx for this?
+1. Click button, get grug quote. One in every five clicks, the server crashes.
+

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Grug</title>
+    <script
+      src="https://unpkg.com/htmx.org@2.0.4"
+      integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img src="assets/grug.png" width="200" height="200" />
+    <br />
+    <br />
+    <button
+      hx-trigger="click"
+      hx-get="/quote"
+      hx-target="#quote"
+      hx-swap="innerHTML"
+    >
+      grug wisdom please
+    </button>
+    <br />
+    <div id="quote"></div>
+  </body>
+</html>
