@@ -4,13 +4,6 @@ const path = require("path");
 
 const PORT = parseInt(process.env.PORT ?? "4567");
 
-const quotes = fs
-  .readFileSync("./data/quotes.html")
-  .toString()
-  .split("<h1>")
-  .filter(Boolean)
-  .map((chunk) => `<h1>${chunk}`);
-
 const server = http.createServer((req, res) => {
   try {
     switch (req.method) {
@@ -19,12 +12,6 @@ const server = http.createServer((req, res) => {
           case "/":
           case "/index.html":
             serveFile("./index.html", res);
-            break;
-          case "/quote":
-            const idx = Math.floor(Math.random() * quotes.length);
-            const quote = quotes[idx];
-            res.writeHead(200, { "Content-Type": "text/html" });
-            res.end(quote);
             break;
           case "/assets/grug.png":
             serveFile("./assets/grug.png", res);
@@ -67,5 +54,5 @@ function serveFile(filePath, res) {
 }
 
 server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+  console.log(`Static server running at http://localhost:${PORT}/ - open this in your browser!`);
 });

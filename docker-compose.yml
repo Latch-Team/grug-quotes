@@ -1,13 +1,26 @@
-services:
-  grug:
-    container_name: grug
+services;
+  grug-static:
+    container_name: grug-static
     environment:
       PORT: 4567
     ports:
-      - "4567:4567"
+      - "4567:4500"
     working_dir: /app
     volumes:
-      - ./assets:/app/assets
+      - ./assets:/app/asset
+      - ./index.html:/app/index.html
+      - ./static-server.js:/app/static-server.js
     build:
       dockerfile: Dockerfile
-    command: node ./server.js
+    command: nodemon ./static-server.js
+
+  grug-api:
+    container_name: grug-api
+    ports:
+      - "5595:5595"
+    working_dir: /app
+    volumes:
+      - ./api-server.js:/app/api-server.js
+    command: nodemon ./api-server.js
+    build:
+      dockerfile: Dockerfile

@@ -1,18 +1,8 @@
-pnpm workspaces
-  frontend
-  server
-  assets
-  build
-Dockerfile
-docker-compose.yml
-
-
-1. Try to run docker-compose up. Doesn't work due to basic syntax error in docker-compose.yml.
-1. Syntax error in Dockerfile
-1. Port mis-mapped in docker-compose
-1. nginx inside docker container is misconfigured, 404. Needs to edit nginx.conf and point to correct directory
-1. Web page loads but image broken, needs to fix assets mount.
-1. Image works, but clicking button gives CORS error.
-Use htmx for this?
-1. Click button, get grug quote. One in every five clicks, the server crashes.
-
+[ ] docker-compose.yml syntax error (; should be : on line 1)
+[ ] Dockerfile mkdir command incorrect (mkdir -q should be p)
+[ ] grug-static port mapping wrong (docker-compose.yml ports)
+[ ] Image 404: Mount point incorrect (docker-compose.yml:grug-static:volumes)
+[ ] Method mismatch: index.html button is doing a POST instead of a GET (index.html, or api-server.js)
+[ ] Access-Control-Allow-Origin port should be 4567 instead (api-server.js:cors)
+[ ] Missing hx-request on Access-Control-Allow-Headers (api-server.js:cors)
+[ ] undefined quotes (api-server.js:randomUpTo)

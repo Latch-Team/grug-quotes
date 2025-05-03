@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Grug</title>
+    <meta name="htmx-config" content='{"selfRequestsOnly":false}' />
     <script
       src="https://unpkg.com/htmx.org@2.0.4"
       integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
@@ -13,7 +14,7 @@
     <br />
     <button
       hx-trigger="click"
-      hx-get="/quote"
+      hx-post="http://localhost:5595/quote"
       hx-target="#quote"
       hx-swap="innerHTML"
     >
