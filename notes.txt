@@ -1,8 +1,0 @@
-[ ] docker-compose.yml syntax error (; should be : on line 1)
-[ ] Dockerfile mkdir command incorrect (mkdir -q should be p)
-[ ] grug-static port mapping wrong (docker-compose.yml ports)
-[ ] Image 404: Mount point incorrect (docker-compose.yml:grug-static:volumes)
-[ ] Method mismatch: index.html button is doing a POST instead of a GET (index.html, or api-server.js)
-[ ] Access-Control-Allow-Origin port should be 4567 instead (api-server.js:cors)
-[ ] Missing hx-request on Access-Control-Allow-Headers (api-server.js:cors)
-[ ] undefined quotes (api-server.js:randomUpTo)
