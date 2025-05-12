@@ -1,0 +1,15 @@
+{
+  "name": "Latch/grug-quotes",
+  "version": "1.0.0",
+  "description": "grug quotes!",
+  "scripts": {
+    "generate-sql-migration": "node generate-sql-migration.js",
+    "serve-static": "nodemon ./static-server.js",
+    "serve-api": "nodemon ./api-server.js"
+  },
+  "author": "Ivo",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}
