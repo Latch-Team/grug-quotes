@@ -13,7 +13,7 @@ CREATE TABLE quotes (
 
 ALTER SEQUENCE quotes_id_seq RESTART WITH 50;
 
-INSERT INTO quotes (name, body_html) VALUES ('The Eternal Enemy: Complexity', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-complexity"></a
   ><a href="#grug-on-complexity">The Eternal Enemy: Complexity</a>
 </h1>
@@ -55,7 +55,7 @@ INSERT INTO quotes (name, body_html) VALUES ('The Eternal Enemy: Complexity', '<
 </p>
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Saying No', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-saying-no"></a><a href="#grug-on-saying-no">Saying No</a>
 </h1>
 <p>best weapon against complexity spirit demon is magic word: &quot;no&quot;</p>
@@ -82,7 +82,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Saying No', '<h1>
 <p>is ok: how many shiney rock grug really need anyway?</p>
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Saying ok', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-saying-ok"></a><a href="#grug-on-saying-ok">Saying ok</a>
 </h1>
 <p>
@@ -114,7 +114,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Saying ok', '<h1>
 </p>
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Factoring Your Code', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-factring-your-code"></a
   ><a href="#grug-on-factring-your-code">Factoring Your Code</a>
 </h1>
@@ -189,7 +189,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Factoring Your Code', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Testing', '<h1><a name="grug-on-testing"></a><a href="#grug-on-testing">Testing</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-testing"></a><a href="#grug-on-testing">Testing</a></h1>
 <p>
   grug have love/hate relationship with test: test save grug many, many
   uncountable time and grug love and respect test
@@ -282,7 +282,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Testing', '<h1><a name="grug-on-te
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Agile', '<h1><a name="grug-on-agile"></a><a href="#grug-on-agile">Agile</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-agile"></a><a href="#grug-on-agile">Agile</a></h1>
 <p>grug think agile not terrible, not good</p>
 <p>
   end of day, not worst way to organize development, maybe better than others
@@ -312,7 +312,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Agile', '<h1><a name="grug-on-agil
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Refactoring', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-refactoring"></a
   ><a href="#grug-on-refactoring">Refactoring</a>
 </h1>
@@ -355,7 +355,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Refactoring', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Chesterton''s Fence', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-chestertons-fence"></a
   ><a href="#grug-on-chestertons-fence">Chesterton''s Fence</a>
 </h1>
@@ -402,7 +402,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Chesterton''s Fence', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Microservices', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-microservices"></a
   ><a href="#grug-on-microservices">Microservices</a>
 </h1>
@@ -414,7 +414,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Microservices', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Tools', '<h1><a name="grug-on-tools"></a><a href="#grug-on-tools">Tools</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-tools"></a><a href="#grug-on-tools">Tools</a></h1>
 <p>
   grug love tool. tool and control passion what separate grug from dinosaurs!
   tool allow grug brain to create code that not possible otherwise by doing
@@ -443,7 +443,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Tools', '<h1><a name="grug-on-tool
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Type Systems', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-type-systems"></a
   ><a href="#grug-on-type-systems">Type Systems</a>
 </h1>
@@ -488,7 +488,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Type Systems', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Expression Complexity', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-expression-complexity"></a
   ><a href="#grug-on-expression-complexity">Expression Complexity</a>
 </h1>
@@ -529,7 +529,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Expression Complexity', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('DRY', '<h1><a name="grug-on-dry"></a><a href="#grug-on-dry">DRY</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-dry"></a><a href="#grug-on-dry">DRY</a></h1>
 <p>
   <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> mean
   Don''t Repeat Self, powerful maxim over mind of most developers
@@ -566,7 +566,7 @@ INSERT INTO quotes (name, body_html) VALUES ('DRY', '<h1><a name="grug-on-dry"><
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Separation of Concerns (SoC)', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-soc"></a
   ><a href="#grug-on-soc">Separation of Concerns (SoC)</a>
 </h1>
@@ -600,7 +600,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Separation of Concerns (SoC)', '<h
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Closures', '<h1><a name="grug-on-closures"></a><a href="#grug-on-closures">Closures</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-closures"></a><a href="#grug-on-closures">Closures</a></h1>
 <p>
   grug like closures for right job and that job usually abstracting operation
   over collection of objects
@@ -618,7 +618,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Closures', '<h1><a name="grug-on-c
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Logging', '<h1><a name="grug-on-logging"></a><a href="#grug-on-logging">Logging</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-logging"></a><a href="#grug-on-logging">Logging</a></h1>
 <p>
   grug huge fan of logging and encourage lots of it, especially in cloud
   deployed. some non-grugs say logging expensive and not important. grug used
@@ -664,7 +664,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Logging', '<h1><a name="grug-on-lo
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Concurrency', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-concurrency"></a
   ><a href="#grug-on-concurrency">Concurrency</a>
 </h1>
@@ -703,7 +703,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Concurrency', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Optimizing', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-optimizing"></a><a href="#grug-on-optimizing">Optimizing</a>
 </h1>
 <p>ultra biggest of brain developer once say:</p>
@@ -736,7 +736,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Optimizing', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('APIs', '<h1><a name="grug-on-apis"></a><a href="#grug-on-apis">APIs</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-apis"></a><a href="#grug-on-apis">APIs</a></h1>
 <p>grug love good apis. good apis not make grug think too much</p>
 <p>
   unfortunately, many apis very bad, make grug think quite a bit. this happen
@@ -804,7 +804,7 @@ INSERT INTO quotes (name, body_html) VALUES ('APIs', '<h1><a name="grug-on-apis"
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Parsing', '<h1><a name="grug-on-parsing"></a><a href="#grug-on-parsing">Parsing</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-parsing"></a><a href="#grug-on-parsing">Parsing</a></h1>
 <p>
   grug love make programming language at drop of hat and say
   <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser"
@@ -841,7 +841,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Parsing', '<h1><a name="grug-on-pa
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('The Visitor Pattern', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-visitor-pattern"></a
   ><a href="#grug-on-visitor-pattern">The Visitor Pattern</a>
 </h1>
@@ -849,7 +849,7 @@ INSERT INTO quotes (name, body_html) VALUES ('The Visitor Pattern', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Front End Development', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-front-end-development"></a
   ><a href="#grug-on-front-end-development">Front End Development</a>
 </h1>
@@ -895,7 +895,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Front End Development', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Fads', '<h1><a name="grug-on-fads"></a><a href="#grug-on-fads">Fads</a></h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1><a name="grug-on-fads"></a><a href="#grug-on-fads">Fads</a></h1>
 <p>
   grug note lots of fads in development, especially front end development today
 </p>
@@ -920,7 +920,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Fads', '<h1><a name="grug-on-fads"
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Fear Of Looking Dumb', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-fold"></a><a href="#grug-on-fold">Fear Of Looking Dumb</a>
 </h1>
 <p>
@@ -951,7 +951,7 @@ INSERT INTO quotes (name, body_html) VALUES ('Fear Of Looking Dumb', '<h1>
 
 ');
 
-INSERT INTO quotes (name, body_html) VALUES ('Impostor Syndrome', '<h1>
+INSERT INTO quotes (name, body_html) VALUES ('', '<h1>
   <a name="grug-on-imposter-syndrom"></a
   ><a href="#grug-on-imposter-syndrom">Impostor Syndrome</a>
 </h1>
