@@ -2,4 +2,3 @@ POSTGRES_DB=grug
 POSTGRES_PORT=5432
 POSTGRES_PASSWORD=grug-grug-grug
 POSTGRES_USER=postgres
-POSTGRES_HOST=grug-postgres

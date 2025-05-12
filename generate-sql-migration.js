@@ -15,7 +15,7 @@ const pgEscape = (str) => {
 
 for (const quote of quotes) {
   const titleHtml = /<h1>([\s\S]+)<\/h1>/.exec(quote)[1].replaceAll("\n", "");
-  const title = titleHtml.match(/>([^<]+)</)[1]; // eg. "The Eternal Enemy: Complexity"
+  const title = titleHtml.match(/>([^<]*)</)[1]; // eg. "The Eternal Enemy: Complexity"
   inserts.push(
     `INSERT INTO quotes (name, body_html) VALUES ('${pgEscape(
       title

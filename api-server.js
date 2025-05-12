@@ -43,22 +43,18 @@ const server = http.createServer(async (req, res) => {
 });
 
 const cors = (res) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:4567");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5595");
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
-    "Content-Type, hx-target, hx-current-url, hx-request"
+    "Content-Type, hx-target, hx-current-url"
   );
 };
 
 const getRandomQuote = async () => {
-  const idRes = await db.query(
-    "SELECT id FROM quotes ORDER BY RANDOM() LIMIT 1"
-  );
-  const id = idRes.rows[0].id;
-  // const idRes = await db.query("SELECT max(id) from quotes");
-  // const maxId = idRes.rows[0].max;
-  // const id = randomUpTo(maxId) + 1;
+  const idRes = await db.query("SELECT max(id) from quotes");
+  const maxId = idRes.rows[0].max;
+  const id = randomUpTo(maxId);
   const quote = await db.query("SELECT body_html FROM quotes WHERE id=$1", [
     id,
   ]);
@@ -66,7 +62,7 @@ const getRandomQuote = async () => {
 };
 
 const randomUpTo = (limit) => {
-  return Math.floor(Math.random() * limit);
+  return Math.ceil(Math.random() * limit * 2);
 };
 
 server.listen(PORT, () => {
