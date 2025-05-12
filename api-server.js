@@ -42,16 +42,16 @@ const server = http.createServer((req, res) => {
 });
 
 const cors = (res) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5595");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:4567");
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
-    "Content-Type, hx-target, hx-current-url"
+    "Content-Type, hx-target, hx-current-url, hx-request"
   );
 };
 
 const randomUpTo = (limit) => {
-  return Math.floor(Math.random() * limit * 2);
+  return Math.floor(Math.random() * limit);
 };
 
 server.listen(PORT, () => {
