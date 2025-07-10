@@ -2,7 +2,7 @@
 
 ## Dependencies
 
--   docker-compose
+-   docker-compose v2.x
 -   node.js
 
 ## Installation instructions
