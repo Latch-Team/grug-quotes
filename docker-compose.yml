@@ -30,6 +30,10 @@ services;
     # docker exec -it grug-postgres psql -U postgres -d grug
     container_name: grug-postgres
     image: postgres:17
+    environment:
+      PGDATA: /pgdata
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    tmpfs:
+      - /pgdata
     env_file: env
