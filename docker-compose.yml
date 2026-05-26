@@ -1,13 +1,13 @@
-services;
+services:
   grug-static:
     container_name: grug-static
     environment:
       PORT: 4567
     ports:
-      - "4567:4500"
+      - "4567:4567"
     working_dir: /app
     volumes:
-      - ./assets:/app/asset
+      - ./assets:/app/assets
       - ./index.html:/app/index.html
       - ./static-server.js:/app/static-server.js
     build:
